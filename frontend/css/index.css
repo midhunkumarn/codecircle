@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    min-height: 100vh;
+    background: url('laptop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  nav{
+    background: linear-gradient(90deg, rgba(0,255,179,1) 0%, rgba(0,142,255,1) 100%);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li{
+    height: 50px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+  }
+  nav a:hover{
+    background-color: #f0f0f0;
+    color: black;
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background: linear-gradient(90deg, rgba(124,102,205,1) 0%, rgba(0,142,255,1) 100%);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+  }
+.logo-img{
+    float: left;
+    position: relative;
+    margin: 9px 15px 15px 10px;
+    
+}
+.bg-div{
+    background:(69, 82, 225);
+    overflow: hidden;
+    margin-right: 45%;
+ }
+
+.typing{
+    display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: var(--background);
+
+}
+.typing {
+  // Text style
+  font-family: 'Inconsolata', Consolas, monospace;
+	font-size: 6vw;
+	color: #d7b94c;
+  // Core styles
+  position: relative;
+	&::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    color: white;
+    background: var(--background);
+    animation: typing 4s steps(var(--steps)) forwards,
+      caret 1s infinite;
+  }
+}
+// Animation
+@keyframes typing {
+	to { width: 0 }
+}
+@keyframes caret {
+	50% { color: transparent }
+}
+
+  
+ 
+  
+  
+  .column {
+    float: left;
+    width: 35.3%;
+    margin-bottom: 18px;
+    padding: 0 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align:center;
+    background-color:  #008080;
+    color: white;
+  }
+
+ 
+ 
